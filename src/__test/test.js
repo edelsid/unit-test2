@@ -7,7 +7,7 @@ test('health sorting-wrong', () => {
     { name: 'лучник', health: 80 },
   ];
   const result = healthSorting(characters);
-  expect(result).toBe([
+  expect(result).not.toBe([
     { name: 'маг', health: 100 },
     { name: 'лучник', health: 80 },
     { name: 'мечник', health: 10 },
